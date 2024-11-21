@@ -9,3 +9,9 @@ class TopicCreate(BaseModel):
 
     class Config:
         from_attributes = True
+
+
+class TopicUpdate(BaseModel):
+    title: Optional[str] = None
+    notebook_id: Optional[int] = None
+    parent_id: Optional[int] = None

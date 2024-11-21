@@ -1,9 +1,9 @@
 from tortoise import fields
 
-from app.models.asbtract import BaseModel
+from app.models.asbtract import AbstractModel
 
 
-class NotebookModel(BaseModel):
+class NotebookModel(AbstractModel):
     title = fields.CharField(max_length=100)
 
     # Relationships

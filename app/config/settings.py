@@ -1,5 +1,4 @@
 from dotenv import load_dotenv
-from functools import lru_cache
 from pydantic_settings import BaseSettings
 
 load_dotenv()
@@ -29,6 +28,5 @@ class Settings(BaseSettings):
         case_sensitive = True
 
 
-@lru_cache()
 def get_settings() -> Settings:
     return Settings()

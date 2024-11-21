@@ -14,6 +14,7 @@ async def init_db():
                 "app.models.note",
                 "app.models.notebook",
                 "app.models.topic",
+                "app.models.note_cache",
             ]
         },
     )
